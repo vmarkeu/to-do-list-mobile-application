@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:backgroundTint="#DFE7FD"
+        android:background="@drawable/category_bg">
+
+        // back
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_button"
+            android:src="@drawable/ic_back"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        // add img
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="23dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_add"/>
+
+        // text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview"
+            android:text="Add a Task"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#707aba"/>
+
+    </RelativeLayout>
+
+    // task title
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="TASK TITLE"
+        android:textSize="16sp"
+        android:textColor="#707aba"/>
+
+    <EditText
+        android:id="@+id/title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:hint="Task 1"
+        android:textSize="14sp"/>
+
+    // task description
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="TASK DESCRIPTION"
+        android:textSize="16sp"
+        android:textColor="#707aba"/>
+
+    <EditText
+        android:id="@+id/desc_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:background="@drawable/btn_border"
+        android:padding="10dp"
+        android:hint="Task 1"
+        android:textSize="14sp"/>
+
+    // task category
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:text="TASK CATEGORY"
+        android:textSize="16sp"
+        android:textColor="#707aba"/>
+
+    // radio button to choose category
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/radio_group">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kiv_input"
+            android:text="Keep in View (KIV)"
+            android:checked="true"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:buttonTint="#707aba"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/general_input"
+            android:text="General"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:buttonTint="#707aba"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/important_input"
+            android:text="Important"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:buttonTint="#707aba"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urgent_input"
+            android:text="Urgent"
+            android:textSize="14sp"
+            android:padding="3dp"
+            android:buttonTint="#707aba"/>
+
+    </RadioGroup>
+
+    // add task button
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_background"
+        android:text="Add task"
+        android:textStyle="bold"
+        android:textColor="#707aba"
+        app:backgroundTint="#DFE7FD"/>
+
+</LinearLayout>
